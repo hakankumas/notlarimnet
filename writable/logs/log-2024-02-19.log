@@ -1,0 +1,40 @@
+CRITICAL - 2024-02-19 19:14:29 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(8): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-02-19 20:35:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/home-user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/home-user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/home-user', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(24): view('user/home-user')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home_user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-02-19 20:35:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/login-user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/login-user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/login-user', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(20): view('user/login-user')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_login_user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-02-19 20:35:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "user/register-user.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('user/register-user.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/register-user', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(16): view('user/register-user')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_register_user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')

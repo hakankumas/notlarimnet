@@ -1,0 +1,262 @@
+CRITICAL - 2024-03-04 17:35:37 --> ErrorException: Trying to get property 'username' of non-object
+in APPPATH\Controllers\ProcessController.php on line 37.
+ 1 APPPATH\Controllers\ProcessController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:40:24 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 37.
+ 1 APPPATH\Controllers\ProcessController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:40:35 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 37.
+ 1 APPPATH\Controllers\ProcessController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:48:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:48:34 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:48:42 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:48:57 --> ErrorException: Trying to get property 'username' of non-object
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'username\' of non-object', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:49:16 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:49:24 --> ErrorException: Trying to access array offset on value of type null
+in APPPATH\Controllers\ProcessController.php on line 32.
+ 1 APPPATH\Controllers\ProcessController.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->insert()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:58:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 17:58:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:02:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "page-home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page-home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('page-home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(59): view('page-home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:06:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:08:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_mainpage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:08:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_mainpage()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:08:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "page-mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page-mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('page-mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(59): view('page-mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:08:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "page-mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('page-mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('page-mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(59): view('page-mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:09:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(59): view('mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:09:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "mainpage.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('mainpage.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mainpage', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(59): view('mainpage')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:10:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:10:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:11:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:11:07 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(67): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 18:13:30 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(61): view('login')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 20:00:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(16): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 20:00:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(16): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 20:00:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(16): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+CRITICAL - 2024-03-04 20:00:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "index.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('index.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH\Controllers\ProcessController.php(16): view('index')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
