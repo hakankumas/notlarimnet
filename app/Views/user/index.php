@@ -48,7 +48,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="<?= base_url('page-login-user') ?>">Çıkış Yap</a></li>
+          <li><a class="getstarted scrollto bg-danger" href="<?= base_url('page-login-user') ?>">Çıkış Yap</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
