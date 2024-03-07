@@ -1,0 +1,11 @@
+CRITICAL - 2024-03-07 19:47:22 --> ErrorException: Undefined variable: session
+in APPPATH\Controllers\ProcessController.php on line 69.
+ 1 APPPATH\Controllers\ProcessController.php(69): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\xampp\\htdocs\\notlarimnet\\app\\Controllers\\ProcessController.php', 69, [])
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\ProcessController->page_home()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProcessController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\notlarimnet\\public\\index.php')
+INFO - 2024-03-07 19:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-07 19:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-03-07 19:49:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
