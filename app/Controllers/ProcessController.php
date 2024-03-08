@@ -52,10 +52,11 @@ class ProcessController extends BaseController{
             "username" => $username,
             "password" => $password
         );
-
-        $session = $this->UserModel->where($where)->first();
         
-        if($session !== NULL){
+        $is_session = $this->UserModel->where($where)->first();
+        if($is_session !== NULL){
+            $session = session();
+            $session->set($where);
             return redirect()->to("page-home-user");
         }else{
             return view("user/login");
@@ -64,7 +65,16 @@ class ProcessController extends BaseController{
     }
 
     public function page_home() {
-        return view('user/index');
+        $session = session();
+        $getSession_username = $session->get("username");
+        $getSession_password = $session->get("password");
+
+        $data = [
+            "username" => $getSession_username,
+            "password" => $getSession_password,
+        ];
+        
+        return view('user/index', $data);
     }
 
 
@@ -74,6 +84,28 @@ class ProcessController extends BaseController{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 

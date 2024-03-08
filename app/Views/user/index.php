@@ -35,7 +35,7 @@
     <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
         <div class="col-xl-7 col-lg-9 text-center">
-          <h1>Merhaba Hakan</h1>
+          <h1><i>Merhaba @<?= isset($username) ? $username : null ?>!</i></h1>
           <h2>Unutmadan notunu al!</h2>
         </div>
       </div>
