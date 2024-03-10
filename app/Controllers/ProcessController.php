@@ -6,18 +6,27 @@ use CodeIgniter\Controller;
 
 class ProcessController extends BaseController{
     protected $UserModel;
+    protected $NoteModel;
     
     public function __construct() {
         helper('url');
         $this->UserModel = new \App\Models\UserModel();
+        $this->NoteModel = new \App\Models\NoteModel();
     }
 
     public function index(){
-        return view('index');
+        $session = session();
+        if($session->has('username')){
+            return redirect()->to('page-home-user');
+        }else{
+            return view('index');
+        }
     }
 
-    public function error(){
-        return view('error');
+    public function logout(){
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/');
     }
 
     public function page_register(){
@@ -69,21 +78,113 @@ class ProcessController extends BaseController{
         $getSession_username = $session->get("username");
         $getSession_password = $session->get("password");
 
+        $notes = $this->NoteModel->where("username" , $getSession_username)->where("ishide" , 1)->orderBy("note_updateDate" , "DESC")->orderBy("note_registerDate" , "DESC")->find();
+
         $data = [
-            "username" => $getSession_username,
-            "password" => $getSession_password,
+            "username"  => $getSession_username,
+            "password"  => $getSession_password,
+            "notes"     => $notes,
         ];
         
         return view('user/index', $data);
     }
 
+    public function create_note() {
+        $session = session();
+        $getSession_username = $session->get("username");
 
+        $note_title     = $this->request->getPost('note_title');
+        $note_content   = $this->request->getPost('note_content');
+        $data = [
+            "username"      => $getSession_username,
+            "note_title"    => $note_title,
+            "note_content"  => $note_content
+        ];
 
+        $process = $this->NoteModel->insert($data);
+        if($process){
+            echo "<script>
+                alert('Notunuz Oluşturuldu!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Eklenemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }
+    }
 
+    public function update_note() {
+        $note_id        = $this->request->getPost("note_id");
+        $note_title     = $this->request->getPost("note_title");
+        $note_content   = $this->request->getPost("note_content");
+        $data = [
+            "note_title"    => $note_title,
+            "note_content"  => $note_content
+        ];
 
+        $condition = [
+            'note_id' => $note_id
+        ];
 
+        $process = $this->NoteModel->update($condition , $data);
+        if($process){
+            echo "<script>
+                alert('Notunuz Güncellendi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Güncellenemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }
+    }
 
+    public function hide_note() {
+        $note_id = $this->request->getPost("note_id");
+        $condition = [
+            'note_id' => $note_id
+        ];
 
+        $data = [
+            "ishide" => 0
+        ];
+
+        $process = $this->NoteModel->update($condition , $data);
+        if($process){
+            echo "<script>
+                alert('Notunuz Gizlendi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Gizlenemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        } 
+    }
+
+    public function delete_note() {
+        $note_id = $this->request->getPost("note_id");
+        $condition = [
+            "note_id" => $note_id
+        ];
+
+        $process = $this->NoteModel->delete($condition);
+        if($process){
+            echo "<script>
+                alert('Notunuz Silindi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Silinemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        } 
+    }
 
 
 

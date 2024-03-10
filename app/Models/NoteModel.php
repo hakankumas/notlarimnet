@@ -10,11 +10,12 @@ class NoteModel extends Model{
     protected $useAutoIncrement = true;
 	protected $returnType       = 'array';
     protected $allowedFields    = [
-                                'id'           , 
-                                'username'     , 
-                                'title'        , 
-                                'content'      ,
-                                'registerDate' ,                           
-                                'updateDate'                           
+                                'note_id'           , 
+                                'username'          , 
+                                'note_title'        , 
+                                'note_content'      ,
+                                'note_registerDate' ,                           
+                                'note_updateDate'   ,                        
+                                'ishide'                           
                             ];
 }
