@@ -78,12 +78,14 @@ class ProcessController extends BaseController{
         $getSession_username = $session->get("username");
         $getSession_password = $session->get("password");
 
-        $notes = $this->NoteModel->where("username" , $getSession_username)->where("ishide" , 1)->orderBy("note_updateDate" , "DESC")->orderBy("note_registerDate" , "DESC")->find();
+        $notes      = $this->NoteModel->where("username" , $getSession_username)->where("ishide" , 1)->orderBy("note_updateDate" , "DESC")->find();
+        $hide_notes = $this->NoteModel->where("username" , $getSession_username)->where("ishide" , 0)->orderBy("note_updateDate" , "DESC")->find();
 
         $data = [
-            "username"  => $getSession_username,
-            "password"  => $getSession_password,
-            "notes"     => $notes,
+            "username"      => $getSession_username,
+            "password"      => $getSession_password,
+            "notes"         => $notes,
+            "hide_notes"    => $hide_notes
         ];
         
         return view('user/index', $data);
@@ -186,9 +188,51 @@ class ProcessController extends BaseController{
         } 
     }
 
+    public function hidden_note($note_id) {
+        $condition = [
+            "note_id"  =>  $note_id
+        ];
+        
+        $data = [
+            "ishide" => 1
+        ];
 
+        $process = $this->NoteModel->update($condition, $data);
 
+        if($process){
+            echo "<script>
+                alert('Notunuz Gösteriliyor!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Gösterilemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }
+        
+    }
 
+    public function hiddenDelete_note($note_id) {
+        $condition = [
+            "note_id"  =>  $note_id
+        ];
+        
+        $process = $this->NoteModel->delete($condition);
+
+        if($process){
+            echo "<script>
+                alert('Notunuz Silindi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }else{
+            echo "<script>
+                alert('Notunuz Silinemedi!'); 
+                window.location.href='".base_url('page-home-user')."';
+            </script>";
+        }
+        
+    }
 
 
 

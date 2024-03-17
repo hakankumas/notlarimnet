@@ -41,8 +41,8 @@
         <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-9 text-center">
-                    <h1><i>Merhaba @
-                            <?= isset($username) ? $username : null ?>!
+                    <h1 style="font-size:40px;"><i>Merhaba
+                            <?= isset($username) ? "@".$username : null ?>!
                         </i></h1>
                     <h2>Unutmadan notunu al!</h2>
                 </div>
@@ -54,18 +54,18 @@
                     Yeni Bir Not Oluştur!
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal of Create New Note -->
                 <div class="modal fade" id="create_note" tabindex="-1" aria-labelledby="create_noteLabel"
                     aria-hidden="true">
-                    <div class="modal-dialog">
+                    <div class="modal-dialog modal-lg">
                         <div class="modal-content">
                             <div class="modal-header" style="background-color:whitesmoke">
                                 <h5 class="modal-title" id="create_noteLabel"><i><b>notlarim.net</b></i></h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body p-5 pt-4">
+                                <h3 class="text-center pb-3">Yeni Bir Not Oluştur!</h3>
                                 <form action="<?= base_url('create-note') ?>" method="post">
-                                    <h3>Yeni Bir Not Oluştur!</h3>
                                     <div class="mt-4">
                                         <input type="text" class="form-control" name="note_title" placeholder="Başlık" required autofocus />
                                     </div>
@@ -73,8 +73,8 @@
                                         <textarea class="form-control" name="note_content" rows="8" placeholder="İçerik" required></textarea>
                                     </div>
                                     <div class="mt-4 d-flex justify-content-end">
-                                        <button type="button" class="btn btn-danger me-3" data-bs-dismiss="modal">İptal</button>
-                                        <button type="submit" class="btn btn-success">Kaydet</button>
+                                        <button type="button" class="col-2 btn btn-danger me-3" data-bs-dismiss="modal">İptal</button>
+                                        <button type="submit" class="col-2 btn btn-success">Kaydet</button>
                                     </div>
                                 </form>
                             </div>
@@ -124,19 +124,52 @@
                 <div class="section-title">
                     <button 
                         class="btn btn-lg btn-outline-dark border-dark ms-1" 
+                        data-bs-toggle="modal"
+                        data-bs-target="#hidden_note" 
                         style="box-shadow: 1px 1px 1px 1px black;"
-                        title="Gizli notlarımı göster.">
-                        <i class="fa-solid fa-eye-slash"></i>
+                        title="Gizli notlarımı göster."
+                        ><i class="fa-solid fa-eye-slash"></i>
                     </button>
                 </div>
+                <!-- Modal of Hidden -->
+                <div class="modal fade" id="hidden_note" tabindex="-1" aria-labelledby="hidden_noteLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background-color:whitesmoke">
+                                <h5 class="modal-title" id="hidden_noteLabel"><i><b>notlarim.net</b></i></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5 pt-4">
+                                <h1 class="text-center pb-3">Gizlenmiş Notlar</h1>
+                                <table class="table table-responsive table-hover table-bordered">
+                                    <tr>
+                                        <th class="ps-3" style="width: 40%;">Başlık</th>
+                                        <th class="ps-3" style="width: 40%;">İçerik</th>
+                                        <th style="width: 10%;" class="bg-primary text-white text-center">Göster</th>
+                                        <th style="width: 10%;" class="bg-danger text-white text-center">Sil</th>
+                                    </tr>
+                                    <?php foreach ($hide_notes as $h_note): ?>
+                                        <tr style="vertical-align: middle;">
+                                            <td class="ps-3 pe-3" title="<?= $h_note["note_title"]?>"><?= $h_note["note_title"]?></td>
+                                            <td class="ps-3 pe-3" title="<?= $h_note["note_content"]?>"><?= $h_note["note_content"]?></td>
+                                            <td><a class="btn btn-outline-primary w-100 h-100" title="Göster" href="<?= base_url("hidden-note/").$h_note["note_id"]?>"><i class="fa-solid fa-eye"></i></a></td>
+                                            <td><a class="btn btn-outline-danger w-100 h-100" title="Sil" href="<?= base_url("hiddenDelete-note/").$h_note["note_id"]?>"><i class="fa-solid fa-trash-can"></i></a></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                     <?php foreach ($notes as $note): ?>
-                        <div class="col-lg-4 col-md-6" data-aos="zoom-in2">
-                            <div class="bg-warning text-primary rounded p-5 m-4" style="height:350px;
+                        <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                            <div class="bg-warning text-primary rounded p-5 m-4" style="height:400px;
                                                                         box-shadow:    1px 5px 5px 5px silver;
                                                                         overflow-wrap: break-word; 
                                                                         overflow-x:    hidden; 
-                                                                        overflow-y:    scroll ? scroll : null; ">
+                                                                        overflow-y:    hidden; ">
                                 <div class="text-end mb-4" style="margin-top: -40px; margin-right: -40px;">
                                     <button 
                                         class="btn btn-lg btn-danger border-dark ms-1" 
@@ -159,24 +192,25 @@
                                     </button>
                                 </div>
                                 
-                                <h4><?= $note["note_title"]; ?></h4>
-                                <p><?= $note["note_content"]; ?></p>
+                                <p class="text-end" style="translate: 30px;"><?= $note["note_updateDate"]; ?></p>
+                                <h4 id="q_note_title"><?= $note["note_title"]; ?></h4>
+                                <p id="q_note_content"><?= $note["note_content"]; ?></p>
                             </div>
                         </div>
                         
                         <!-- Modal of Update -->
                         <div class="modal fade" id="update_note<?= $note["note_id"] ?>" tabindex="-1" aria-labelledby="update_noteLabel<?= $note["note_id"] ?>" aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header" style="background-color:whitesmoke">
                                         <h5 class="modal-title" id="update_noteLabel<?= $note["note_id"] ?>"><i><b>notlarim.net</b></i></h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        <form action="<?= base_url('update-note') ?>" method="post" class="p-3">
-                                            <h3 class="text-center">Notunuzu Düzenleyin!</h3>
+                                    <div class="modal-body p-5 pt-4">
+                                        <h3 class="text-center pb-3">Notunuzu Düzenleyin!</h3>
+                                        <form action="<?= base_url('update-note') ?>" method="post">
                                             <input hidden name="note_id" value="<?= $note["note_id"] ?>"/>
-                                            <div class="mt-4">
+                                            <div>
                                                 <label class="form-label mb-1">Başlık:</label>
                                                 <input type="text" class="form-control" name="note_title" value="<?= $note["note_title"]; ?>" required autofocus />
                                             </div>
@@ -185,8 +219,8 @@
                                                 <textarea class="form-control" name="note_content" rows="8" required><?= $note["note_content"]; ?></textarea>
                                             </div>
                                             <div class="mt-4 d-flex justify-content-end">
-                                                <button type="button" class="col-3 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
-                                                <button type="submit" class="col-3 btn btn-success">Güncelle</button>
+                                                <button type="button" class="col-2 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
+                                                <button type="submit" class="col-2 btn btn-success">Güncelle</button>
                                             </div>
                                         </form>
                                     </div>
@@ -207,8 +241,8 @@
                                         <form action="<?= base_url('hide-note') ?>" method="post">
                                             <input hidden name="note_id" value="<?= $note["note_id"] ?>"/>
                                             <div class="mt-4 d-flex justify-content-end">
-                                                <button type="button" class="col-3 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
-                                                <button type="submit" class="col-3 btn btn-primary">Gizle</button>
+                                                <button type="button" class="col-2 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
+                                                <button type="submit" class="col-2 btn btn-primary">Gizle</button>
                                             </div>
                                         </form>
                                     </div>
@@ -229,8 +263,8 @@
                                         <form action="<?= base_url('delete-note') ?>" method="post">
                                             <input hidden name="note_id" value="<?= $note["note_id"] ?>"/>
                                             <div class="mt-4 d-flex justify-content-end">
-                                                <button type="button" class="col-3 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
-                                                <button type="submit" class="col-3 btn btn-danger">Sil</button>
+                                                <button type="button" class="col-2 btn btn-secondary me-3" data-bs-dismiss="modal">İptal</button>
+                                                <button type="submit" class="col-2 btn btn-danger">Sil</button>
                                             </div>
                                         </form>
                                     </div>
@@ -275,8 +309,7 @@
     </footer>
     <div id="preloader"></div>
     <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-            class="fa-solid fa-arrow-up"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa-solid fa-arrow-up"></i></a>
     <script src="<?= base_url('assets/vendor/purecounter/purecounter_vanilla.js') ?>"></script>
     <script src="<?= base_url('assets/vendor/aos/aos.js') ?>"></script>
     <script src="<?= base_url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
@@ -285,6 +318,7 @@
     <script src="<?= base_url('assets/vendor/swiper/swiper-bundle.min.js') ?>"></script>
     <script src="<?= base_url('assets/vendor/php-email-form/validate.js') ?>"></script>
     <script src="<?= base_url('assets/js/main.js') ?>"></script>
+    <script src="<?= base_url('assets/js/line_hidden.js') ?>"></script>
 </body>
 
 </html>
