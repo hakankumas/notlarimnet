@@ -21,29 +21,3 @@ $routes->get('hidden-note/(:num)'         , 'ProcessController::hidden_note/$1')
 $routes->get('hiddenDelete-note/(:num)'   , 'ProcessController::hiddenDelete_note/$1');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $routes->get('page-login-admin'      , 'ProcessController::page_login_admin');
-// $routes->get('page-home-user'        , 'ProcessController::page_home_user');
-

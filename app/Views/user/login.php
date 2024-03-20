@@ -46,7 +46,10 @@
             </div>
             <div class="mt-4">
               <label class="form-label">Şifre</label>
-              <input type="text" class="form-control" name="password" required/>
+              <input type="password" class="form-control" name="password" required/>
+            </div>
+            <div class="text-end mt-2">
+                <a href="<?= base_url('page-register-user') ?>"><small class="text-primary"><u>Yeni bir hesap oluştur.</u></small></a>
             </div>
             <div class="mt-4 text-center">
               <button type="submit" class="btn btn-outline-success">Giriş Yap</button>

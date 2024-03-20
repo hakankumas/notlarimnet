@@ -30,7 +30,12 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Ana Sayfa</a></li>
-                    <li><a class="getstarted scrollto bg-danger" href="<?= base_url('logout-user') ?>">Çıkış Yap</a>
+                    <li class="dropdown"><a href="#"><span>İşlemler</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Bilgilerim</a></li>
+                            <li><a href="#">Şifre</a></li>
+                            <li><a href="<?= base_url('logout-user') ?>">Çıkış Yap</a></li>
+                        </ul>
                     </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>

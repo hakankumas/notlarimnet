@@ -79,13 +79,13 @@
         <div class="row justify-content-end">
           <div class="col-lg-6 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="65" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="2" class="purecounter"></span>
               <p>Kullanıcı</p>
             </div>
           </div>
           <div class="col-lg-6 col-md-5 col-6 d-md-flex align-items-md-stretch">
             <div class="count-box">
-              <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="1283" data-purecounter-duration="2" class="purecounter"></span>
               <p>Oluşturulan Not</p>
             </div>
           </div>
